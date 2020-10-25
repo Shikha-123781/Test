@@ -1,0 +1,51 @@
+<div align="center" id="div1">
+  <form [formGroup]="formGroup" (ngSubmit)="submitForm(formGroup)">
+    <input type="text" placeholder = "houseNo" formControlName="houseNo">
+        <div *ngIf="submitted && formGroup.get('houseNo').errors && formGroup.get('houseNo').errors.required">
+          house Number is required.
+        </div>
+        <div *ngIf="submitted && formGroup.get('houseNo').errors && formGroup.get('houseNo').errors.pattern">
+          invalid pattern
+        </div>
+    <br>
+    <input formControlName = "ownerName" type="text" placeholder="ownerName" name="ownerName">
+    <div *ngIf="submitted && formGroup.get('ownerName').errors && formGroup.get('ownerName').errors.required">
+          owner Name is required.
+        </div>
+        <div *ngIf="submitted && formGroup.get('houseNo').errors && formGroup.get('houseNo').errors.pattern">
+          invalid pattern
+        </div>
+        <div *ngIf="submitted && formGroup.get('houseNo').errors && formGroup.get('houseNo').errors.alreadyExist">
+          already exist
+        </div><br>
+    <input formControlName = "houseSize" type="text" placeholder="houseSize (in sq.ft.)" name="houseSize">
+    <div *ngIf="submitted && formGroup.get('houseSize').errors && formGroup.get('houseSize').errors.required">
+          houseSize is required.
+        </div>
+        <div *ngIf="submitted && formGroup.get('houseSize').errors && formGroup.get('houseSize').errors.pattern">
+          invalid pattern
+        </div><br>
+    <input formControlName = "numberOfFloors" type="text" placeholder="numberOfFloors" name="numberOfFloors">
+    <div *ngIf="submitted && formGroup.get('numberOfFloors').errors && formGroup.get('numberOfFloors').errors.required">
+          numberOfFloors is required.
+        </div>
+        <div *ngIf="submitted && formGroup.get('numberOfFloors').errors && formGroup.get('numberOfFloors').errors.pattern">
+          invalid pattern
+        </div><br>
+    <input formControlName = "landmark" type="text" placeholder="landmark" name="landmark">
+    <div *ngIf="submitted && formGroup.get('landmark').errors && formGroup.get('landmark').errors.required">
+          landmark is required.
+        </div>
+        <div *ngIf="submitted && formGroup.get('landmark').errors && formGroup.get('landmark').errors.pattern">
+          invalid pattern
+        </div><br>
+    <input formControlName = "mobileNumber" type="text" placeholder="mobileNumber" name="mobileNumber">
+    <div *ngIf="submitted && formGroup.get('mobileNumber').errors && formGroup.get('mobileNumber').errors.required">
+          mobile Number is required.
+        </div>
+        <div *ngIf="submitted && formGroup.get('mobileNumber').errors && formGroup.get('mobileNumber').errors.pattern">
+          invalid pattern
+        </div><br>
+    <input type="submit" name="submit" value="submit">
+  </form>
+</div>

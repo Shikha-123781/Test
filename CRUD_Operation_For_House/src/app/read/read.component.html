@@ -1,0 +1,26 @@
+</select>
+<table style="width:80%">
+  <tr>
+    <th>houseNo</th>
+    <th>ownerName</th>
+    <th>houseSize</th>
+    <th>numberOfFloors</th>
+    <th>landmark</th>
+    <th>locationCoordinates</th>
+    <th>mobileNumber</th>
+    <th>action</th>
+  </tr>
+  <ng-container *ngFor="let posts of posts">
+	  <tr>
+	  	<td>{{posts.houseNo}}</td>
+	  	<td>{{posts.ownerName}}</td>
+	  	<td>{{posts.houseSize}}</td>
+	  	<td>{{posts.numberOfFloors}}</td>
+	  	<td>{{posts.landmark}}</td>
+	  	<td>{{posts.locationCoordinates}}</td>
+	  	<td>{{posts.mobileNumber}}</td>
+	  	<td><button (click)="put(posts)">PUT</button><button (click)=
+	  		"delete(posts)">DELETE</button></td>
+	  </tr>
+</ng-container>
+</table>
