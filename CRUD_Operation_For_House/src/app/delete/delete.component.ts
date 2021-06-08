@@ -17,5 +17,5 @@ export class DeleteComponent implements OnInit {
   	 this.router.navigateByUrl("/read");
 
   }
-
+// this is for dcomment for delete component
 }

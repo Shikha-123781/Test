@@ -31,5 +31,5 @@ export class ReadComponent implements OnInit {
     let houseNo = detail.houseNo;
     this.router.navigateByUrl("/delete/"+houseNo);
   }
-
+//this is comment for read component
 }
