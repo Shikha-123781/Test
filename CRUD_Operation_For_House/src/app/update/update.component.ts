@@ -7,7 +7,8 @@ import { AbstractControl,FormControl,FormGroup, FormBuilder,Validators } from '@
   templateUrl: './update.component.html',
   styleUrls: ['./update.component.css']
 })
-export class UpdateComponent implements OnInit {
+export class UpdateComponent implements OnInit 
+//comments
   info = 'update';
 	detail: any;
 	houseNo: any;

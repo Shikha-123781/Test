@@ -6,11 +6,11 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
   styleUrls: ['./delete.component.css']
 })
 export class DeleteComponent implements OnInit {
-  constructor(private router: Router,private r: ActivatedRoute) { }
+  constructor(private router: Router,private route: ActivatedRoute) { }
   detail: any;
   houseNo: any;
   ngOnInit() {
-  	this.r.params.forEach((params:Params) => {
+  	this.route.params.forEach((params:Params) => {
       this.houseNo = params.houseNo;
     });
     localStorage.removeItem(this.houseNo);
