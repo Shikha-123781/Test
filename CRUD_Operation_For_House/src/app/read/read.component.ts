@@ -6,6 +6,7 @@ selector: 'app-read',
   styleUrls: ['./read.component.css']
 })
 export class ReadComponent implements OnInit {
+	//comments
  posts = [];
  str: String;
   constructor(private router: Router) { }

@@ -5,7 +5,7 @@ import { ReadComponent } from './read/read.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-
+//comments
 const routes: Routes = [
 {path:"", component:CreateComponent},
 {path:"update/:houseNo", component:UpdateComponent},
